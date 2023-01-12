@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box sizing</title>
+    <style>
+        .bbox{
+            border: 5px solid red;
+            height: 400px;
+            width: 400px;
+            padding: 20px;
+            margin: 10px;
+            box-sizing: border-box;
+            
+        }
+        .cbox{
+            border: 5px solid red;
+            height: 400px;
+            width: 400px;
+            padding: 20px;
+            box-sizing: content-box;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="bbox">
+       <span>hi</span> 
+    </div>
+    <div class="cbox">
+        <p>hello</p>
+    </div>
+</body>
+</html>
