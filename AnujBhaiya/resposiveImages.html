@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reponsive Images</title>
+</head>
+<body>
+
+    <h1>This is Reponsive image tutorial</h1>
+
+    <!-- Fetch low quality images on low quality screen to load faster  -->
+
+    <!-- <img width="100%" height="100%"
+    srcset="images/nature.jpg 1x,
+            images/nature2x.jpg 2x,
+            images/nature3x.jpg 3x"
+    src="images/nature.jpg" alt="This is nature image"> -->
+
+
+    <!-- Solving art direction problem -->
+    <img width="100%"
+    srcset="images/family-desktop.jpg 1000w,
+            images/family-tablet.jpg 800w,
+            images/family-mobile.jpg 500w"
+    sizes="(max-width:500px) 500px,
+            (max-width:800px) 800px,
+            1000px"
+           
+    src="images/nature.jpg" alt="This is a image of a family">
+
+    
+</body>
+</html>
