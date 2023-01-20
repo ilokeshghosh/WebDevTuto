@@ -1,3 +1,39 @@
+ /* universal selector */
+/* *{ 
+    font-family: fantasy;
+} */
+
+
 body{
     font-size: 24px;
 }
+
+
+
+/* nested selector */
+/* #first>p{  
+    color: green;
+} */
+
+
+#first, #second{        /* grouping selector */
+    color: red;
+}
+
+.purple{
+    color:purple !important;
+    /* font-family: monospace; */
+}
+
+.highlight{
+    background-color: yellow;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/*Pseudo Selector*/
+p:hover{
+    font-family: monospace;
+}
+
+
