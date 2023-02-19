@@ -1,0 +1,18 @@
+h1{
+    /* text-decoration: line-through;
+    text-decoration-line: underline;
+    text-decoration-color: aqua;
+    text-decoration-style: wavy ;
+    text-transform: capitalize; */
+
+    color: transparent;
+    text-shadow: 4px 4px 1px rebeccapurple,8px 8px 4px royalblue; /*vertical and horizontal*/
+}
+
+p{
+    text-indent: 30px;
+    letter-spacing: 0.1rem;
+    line-height: 1.6rem;
+    word-spacing: 2rem;
+    
+}
