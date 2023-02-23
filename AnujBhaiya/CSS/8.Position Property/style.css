@@ -1,0 +1,53 @@
+body{
+    color:white;
+    font-size:20px;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    background-color: gainsboro;
+    /* position: relative; */
+}
+
+.box{
+    width: 100px;
+    height:100px;
+    /* margin: 20px; */
+}
+.red{
+    
+    position: relative;/* works relative to parent */
+    background-color: red;
+    top: 100px;
+    left: 100px;
+    /* right: 100px; */
+}
+
+.blue{
+    background-color: blue;
+    position:fixed; /* get fixed on a position  */
+    bottom:50px;
+    right: 50px;
+    z-index: 1;
+    
+    
+}
+.green{
+    background-color: green; 
+    position:absolute; /* works relative to root or html  */
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    
+}
+
+.purple{
+    background-color: purple;
+    position: sticky;
+    top:50px;
+}
+
+.spacer{
+    height: 300vh;
+}
