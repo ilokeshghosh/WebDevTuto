@@ -1,0 +1,69 @@
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: steelblue;
+    margin: 80px auto;
+    border-radius: 50px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Scale */
+
+    transform: scale(0.6);
+    /* transform: scaleX(0.3) scaleY(1.5); */
+    /* transform: scaleZ(2); */
+    /* transform: scale(2, 0.3); */
+
+    /* Skew */
+
+    /* transform: skew(20deg); */
+    /* transform: skew(20deg, 50deg); */
+
+    /* Translate */
+
+    /* transform: translate(-20px,-40px); */
+    /* transform: translate(50%,50%); */
+
+
+    /* Rotate */
+
+    /* transform: rotate(110deg); */
+    /* transform: rotateX(70deg); */
+    /* transform: rotateY(60deg); */
+
+    /* transform: rotate(45deg) scale(1.2) skew(30deg) translate(80px, 20px); */
+
+
+    /* Transform Origin */
+
+    /* transform-origin: top left; */
+    /* transform-origin: top ; */
+
+    /* transform-origin:10% 0%; */
+    /* transform-origin: 100px 200px; */
+
+
+    transition: 0.9s ease;
+
+
+
+
+    
+
+
+
+}
+
+.box:hover{
+    transform: rotate(90deg);
+    border-radius: 51px;
+}
+
