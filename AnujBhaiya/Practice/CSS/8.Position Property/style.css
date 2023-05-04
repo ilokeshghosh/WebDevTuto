@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+}
+
+.container{
+    border: 10px solid rebeccapurple;
+    position: relative;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline-block;
+    
+}
+
+.red{
+    background-color: red;
+    /* position:static;  */
+    /* Default value. Elements render in order, as they appear in the document flow */
+    position: relative;
+    
+}
+
+.green{
+    background-color: green;
+    /* The element is positioned relative to its first positioned (not static) ancestor element */
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    
+
+
+}
+
+.blue{
+    background-color: blue;
+    position: fixed;
+    top: 10px;
+    
+
+}
+
+.black{
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 40px;
+    right: 20px;
+}
+
+.yellow{
+    background-color: yellow;
+    position: sticky;
+    margin-top: 60px;
+    top: 10px;
+}
