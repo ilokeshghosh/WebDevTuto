@@ -1,0 +1,89 @@
+<!-- how to select multiple option in dropdown in html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+
+
+        <fieldset draggable="true" disabled="disabled">
+
+            <legend>This is the Legend of the form</legend>
+
+            <label for="text1">Text 1</label>
+
+            <input type="text" name="text1" id="text1">
+            <br />
+            <br />
+
+            <label for="food1">Foods</label>
+            <select name="food1" id="food1" multiple>
+                <option value="maggi">Maggi</option>
+                <option value="milk">Milk</option>
+                <option value="banana">Banana</option>
+            </select>
+            <br />
+            <br />
+            <input type="button" value="submit">
+
+            <br>
+            <br>
+
+            <label for="textarea1">Text Area</label>
+            <textarea name="textarea1" id="textarea1" cols="30" rows="1"
+                placeholder="Enter the text in the text area"></textarea>
+
+        </fieldset>
+    </form>
+
+
+    <form>
+        <label for="text1">TextField:</label>
+        <input type="text" name="text1" id="text1">
+        <br />
+        <br>
+
+        <label for="button1">Button : </label>
+        <input type="submit" name="button1" id="button1" value="Button">
+
+        <br>
+        <br>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <br>
+
+        <input type="radio" name="gender" id="female" value=female>
+        <label for="female">Female</label>
+        <br>
+
+        <input type="radio" name="gender" id="others" value="others">
+        <label for="others">others</label>
+
+        <br><br>
+
+        <label for="checkbox1">English</label>
+        <input type="checkbox" name="checkbox1" id="checkbox1">
+
+        
+        <label for="checkbox2">Computer:</label>
+        <input type="checkbox" name="checkbox1" id="checkbox2">
+
+        <br>
+
+        <label for="fileselect1">Upload :</label>
+        <input type="file" name="fileselect1" id="fileselect1">
+    </form>
+
+
+
+</body>
+
+</html>
