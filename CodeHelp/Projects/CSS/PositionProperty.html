@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project on Position property</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: gainsboro;
+            height: 70px;
+            width: 100%;
+            position: fixed;
+            /* top: 2px; */
+            /* border: 2px solid red; */
+            z-index: 1;
+
+
+        }
+
+        .offer {
+            background-color: cadetblue;
+            height: 50px;
+            position: sticky;
+            top: 70px;
+        }
+
+        .content1 {
+            background-color: aliceblue;
+            height: 500px;
+            /* position: relative; */
+        }
+
+        .content2 {
+            background-color: beige;
+            height: 600px;
+        }
+
+        .contact {
+            background-color: cornflowerblue;
+            height: 40px;
+            width: 100px;
+            border-radius: 25px;
+            position: fixed;
+            bottom: 30px;
+            right: 10px;
+
+        }
+        .chat{
+            background-color: rgb(190, 202, 15);
+            height: 300px;
+            width: 160px;
+            position: fixed;
+            bottom: 80px;
+            left: 10px;
+            border-radius: 0 30px 0 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav></nav>
+
+    <main>
+
+
+        <section class="content1">
+            <div class="offer"></div>
+            <div class="contact"></div>
+            <div class="chat"></div>
+        </section>
+        <section class="content2"></section>
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 10px solid burlywood;
+            background-color: rgb(204, 201, 197);
+            border-radius: 0px 0px 20px 20px;
+            height: 500px;
+            /* position: relative; */
+        }
+
+        .container2 {
+            background-color: cornflowerblue;
+            border: 10px solid rgb(25, 76, 171);
+            height: 600px;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        span {
+            display: inline-block;
+            padding: 50px;
+            margin: 10px;
+            border-radius: 11px;
+            border: 1px solid black;
+        }
+
+        .box1 {
+
+            background-color: thistle;
+            /* position: relative; */
+            /* top: 50px; */
+            /* left: 50px; */
+
+        }
+
+        .box2 {
+            background-color: bisque;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            
+        }
+
+        .box3 {
+            background-color: aquamarine;
+
+            /* position: sticky;
+            top: 10px; */
+
+        }
+
+        .box4 {
+            background-color: cadetblue;
+            /* position: fixed; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <span class="box1">Box1</span>
+        <span class="box2">Box2</span>
+        <span class="box3">Box3</span>
+        <span class="box4">Box4</span>
+
+    </div>
+
+    <div class="container2">
+
+    </div>
+
+</body>
+
+</html>
