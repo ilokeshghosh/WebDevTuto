@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .img>img{
+            width: 300px;
+            height: 300px;
+            border: 2px solid rgb(184, 57, 57);
+        }
+        .container{
+            display: flex;
+            border: 2px solid royalblue ;
+            background-color: rgb(151, 170, 226);
+            width: 800px;
+            margin: auto;
+            padding: 20px;
+
+        }
+        .text{
+            border: 2px solid salmon;
+            background-color: rgb(205, 156, 151);
+            width: 500px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .text>p{
+            border: 2px solid turquoise;
+            background-color: rgb(134, 210, 203);
+            margin: 10px;
+            
+        }
+        @media screen and (min-width:600px) {
+            .container{
+                flex-direction: row;
+               
+            }
+            .text{
+                font-weight: bolder;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .container{
+                flex-direction: column;
+                background-color: antiquewhite;
+                padding: 20px;
+                margin: 10px;
+                width: 410px;
+
+            }
+            .text{
+                color: cadetblue;
+                text-align: center;
+                font-weight: bolder;
+                width: 345px;
+                font-size: smaller;
+
+            }
+
+            .text>p{
+            margin: 5px;
+            
+            
+        }
+
+            .img{
+                margin: auto;
+
+            }
+            .img>img{
+                width: 345px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit repudiandae deserunt ipsam fuga rem officiis aliquam laudantium, neque culpa accusamus minus corrupti quam totam consectetur! Iusto assumenda officia adipisci.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae atque laboriosam iste. Earum autem cumque, praesentium assumenda temporibus laborum saepe voluptatibus, officiis in molestiae sunt, alias voluptatum iusto ab totam.</p>
+        </div>
+
+      
+
+        <div class="img"><img src="https://images.unsplash.com/photo-1690983182598-32726730ccb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80" alt="err"></div>
+    </div>
+</body>
+</html>
