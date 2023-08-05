@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid red;
+            background-color: gray;
+        }
+        .box{
+            background-color: white;
+            padding: 90px;
+
+        
+            margin: 10px;
+            box-shadow: -5px 5px cyan, 5px -1px magenta, 7px -5px red, 15px 3px blue ;
+        
+    
+        }
+        .box>h1{
+            font-weight: bold;
+            font-size: 70px;
+            font-family: sans-serif;
+            letter-spacing: 4px;
+            text-shadow:-2px 3px cyan, 1.5px 1px magenta, 2px -1.5px red, 4px 2px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>This is heading</h1>
+            <h1>Glitch</h1>
+            
+        </div>
+    </div>
+</body>
+</html>
