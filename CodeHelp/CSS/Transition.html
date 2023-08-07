@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in HTML</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .container{
+            background-color: bisque;
+            /* border: 2px solid red; */
+            height: 100vh;
+            width: 100vw;
+            padding: 20px;
+        }
+
+        .box{
+            background-color: royalblue;
+            border: 2px solid slateblue;
+            height: 200px;
+            width: 200px;
+        
+            /* transition-property: width; */
+            /* transition-property: all; */
+            /* transition-duration: 3s; */
+            /* transition-timing-function: linear; */
+            /* transition-delay: .3s; */
+
+            /* transition: all 7s linear .4s; */
+            transition: width 3s linear .4s, height 7s linear .10s, background-color 7s linear .5s;
+        }
+
+        .box:hover{
+            width: 1500px;
+            height: 650px;
+            background-color: blueviolet;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
