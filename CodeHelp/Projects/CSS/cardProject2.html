@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Project 2</title>
+
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+
+        .card{
+            background-color: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            /* border: 4px solid red; */
+            height: 700px;
+            width: 350px;
+            overflow: hidden;
+            gap: 20px;
+            border-radius: 20px;
+            padding: 0px 40px;
+           
+            gap: 30px;
+        }
+
+        .textBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            width: 95%;
+            text-align: center;
+            
+        }
+        .card img{
+            height: 300px;
+            width: 350px;
+        }
+        .plan{
+            background-color: aliceblue;
+            width: 100%;
+            height:30%;
+            border-radius: 10px;
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* flex-direction: row; */
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+    
+
+            /* justify-content: space-around; */
+        }
+
+        
+
+        .imgBox img{
+            width: 20px;
+            height: 20px;
+        }
+
+        .rightBox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+        }
+
+        .payBtn{
+            width: 100%;
+            /* border: 2px solid red; */
+        }
+
+        .payBtn button{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(44, 44, 128);
+            color: white;
+
+        }
+
+        .cancelOrder a{
+            text-decoration: none;
+            color: rgb(44, 44, 128);
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://raw.githubusercontent.com/loveBabbar/CodehelpYTWebDev/main/lecture27/images/icon.jpg" alt="">
+
+            <div class="textBox">
+                <h2>Order Summary</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, voluptatum.</p>
+
+                <div class="plan">
+                    <div class="rightBox">
+                        <div class="imgBox">
+                            <img src="https://raw.githubusercontent.com/loveBabbar/CodehelpYTWebDev/main/lecture27/images/music.png" alt="err">
+
+                        </div>
+                        <div class="AmountBox">
+                            <p>Annual Plan</p>
+                            <p>$9.99/year</p>
+                        </div>
+                    </div>
+
+                    <div class="leftBox">
+                        <a href="">Change</a>
+                    </div>
+                </div>
+                <div class="payBtn"><button>Proceed to Payment</button></div>
+                <div class="cancelOrder"><a href="#">Cancel Order</a></div>
+            </div>
+            
+           
+        </div>
+    </div>
+</body>
+</html>
